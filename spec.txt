@@ -41,13 +41,13 @@
     Example string input: He acts well
     Output: -1 (this will translate to a "Please re-enter your word to search for" prompt in the html)
 
-8. App can handle proper nouns / capitalization
+8. App will still count instances despite capitalization discrepancies
 
-    Example word input: Patrick
+    Example word input: patrick
     Example string input: Patrick Stewart is good at acting
     Output: 1
 
-9. App can ignore punctuation if they're placed after a word
+9. App will still count instances even if punctuation is placed after a word
 
     Example word input: acts
     Example string input: He acts, like William Shatner

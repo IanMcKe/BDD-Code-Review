@@ -102,5 +102,33 @@
             //Assert
             $this->assertEquals(-1, $result);
         }
+
+        function test_capitalization()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = "patrick";
+            $input_string = "Patrick Stewart is good at acting";
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
+        function test_punctuation()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = "acts";
+            $input_string = "He acts, like William Shatner";
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
