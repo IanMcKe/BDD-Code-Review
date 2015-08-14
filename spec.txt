@@ -1,0 +1,42 @@
+1. App can take two one letter strings and correctly state that the first string occurs once in the second.
+
+    Example word input: a
+    Example string input: a
+    Output: 1
+
+2. App can take a one letter string and will not count it if it is only a substring of a word.
+
+    Example word input: a
+    Example string input: abacus
+    Output: 0
+
+3. App can take a one word string and count how many times it occurs in another one word string of the same length.
+
+    Example word input: act
+    Example string input: act
+    Output: 1
+
+4. App can take a one word string and will not count it if it is only a substring of a word.
+
+    Example word input: act
+    Example string input: acting
+    Output: 0
+
+
+5. App can take a one word input and count how many times it occurs in a multiple word string.
+
+    Example word input: act
+    Example string input: I act well
+    Output: 1
+
+6. App can take a one word input and count how many times it occurs in a multiple word string where substrings of it occur.
+
+    Example word input: act
+    Example string input: acting act action activation
+    Output: 1
+
+7. App will re-prompt the user to enter a word to search for if he or she typed in a multi word string first.
+
+    Example word input: He acts
+    Example string input: He acts well
+    Output: -1 (this will translate to a "Please re-enter your word to search for" prompt in the html)
