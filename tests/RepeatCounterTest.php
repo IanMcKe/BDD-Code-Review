@@ -75,6 +75,20 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_correctCounting()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = "hello";
+            $input_string = "hello hello hello";
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(3, $result);
+        }
+
         function test_multipleWordsWithSubstring()
         {
             //Arrange
@@ -129,6 +143,20 @@
 
             //Assert
             $this->assertEquals(1, $result);
+        }
+
+        function test_quotes()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = "hello";
+            $input_string = '"hello hello hello"';
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(3, $result);
         }
     }
 ?>

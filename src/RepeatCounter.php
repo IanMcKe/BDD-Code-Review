@@ -31,7 +31,7 @@
                     array_push($formatted_string, strtolower($formatted_part));
                 }
 
-                //lower case strings and count matches
+                //set $user_word to lower case and count matches
                 $lower_case_word = strtolower($formatted_word);
 
                 $result = 0;

@@ -23,32 +23,44 @@
     Output: 0
 
 
-5. App can take a one word input and count how many times it occurs in a multiple word string.
+5. App can take a one word input and find if it occurs in a multiple word string.
 
     Example word input: act
     Example string input: I act well
     Output: 1
 
-6. App can take a one word input and count how many times it occurs in a multiple word string where substrings of it occur.
+6. App can take a one word input and count how many times it occurs in a multiple word string.
+
+    Example word input: hello
+    Example string input: hello hello hello
+    Output: 3
+
+7. App can take a one word input and count how many times it occurs in a multiple word string where substrings of it occur.
 
     Example word input: act
     Example string input: acting act action activation
     Output: 1
 
-7. App will re-prompt the user to enter a word to search for if he or she typed in a multi word string first.
+8. App will re-prompt the user to enter a word to search for if he or she typed in a multi word string first.
 
     Example word input: He acts
     Example string input: He acts well
     Output: -1 (this will translate to a "Please re-enter your word to search for" prompt in the html)
 
-8. App will still count instances despite capitalization discrepancies
+9. App will still count instances despite capitalization discrepancies
 
     Example word input: patrick
     Example string input: Patrick Stewart is good at acting
     Output: 1
 
-9. App will still count instances even if punctuation is placed before/after a word
+10. App will still count instances even if punctuation is placed after a word
 
     Example word input: acts
     Example string input: He acts, like William Shatner
     Output: 1
+
+11. App will handle punctuation before a word correctly
+
+    Example word input: hello
+    Example string input: "hello hello hello"
+    Output: 3
