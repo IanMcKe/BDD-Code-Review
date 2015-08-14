@@ -3,12 +3,14 @@
     {
         function countRepeats($user_word, $user_string)
         {
-            $result = 0;
-            
-            if ($user_word == $user_string){
-                ++$result;
-            }
 
+            $string_array = explode(" ", $user_string);
+            $result = 0;
+            foreach($string_array as $word){
+                if ($user_word == $word){
+                    ++$result;
+                }
+            }
             return $result;
         }
     }
