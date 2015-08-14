@@ -47,7 +47,7 @@
     Example string input: Patrick Stewart is good at acting
     Output: 1
 
-9. App will still count instances even if punctuation is placed after a word
+9. App will still count instances even if punctuation is placed before/after a word
 
     Example word input: acts
     Example string input: He acts, like William Shatner
