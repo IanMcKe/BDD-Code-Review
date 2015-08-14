@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Results</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>You searched for: {{ word }}</h1>
+            {% if result >= 0 %}
+                <h1>It appears {{ result }} times in:</h1>
+                <h3>{{ string }}</h3>
+            {% else %}
+            <h1>You entered more than one word. Please try again</h1>
+            {% endif %}
+            <form action="/">
+                <button type='submit' class='btn btn-danger'>Home</button>
+            </form>
+        </div>
+    </body>
+</html>
