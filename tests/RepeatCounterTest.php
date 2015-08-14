@@ -75,6 +75,32 @@
             $this->assertEquals(1, $result);
         }
 
+        function test_multipleWordsWithSubstring()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = "act";
+            $input_string = "acting act action activation";
 
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(1, $result);
+        }
+
+        function test_inproperInput()
+        {
+            //Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $input_word = "hi there";
+            $input_string = "hi there scary man";
+
+            //Act
+            $result = $test_repeatCounter->countRepeats($input_word, $input_string);
+
+            //Assert
+            $this->assertEquals(-1, $result);
+        }
     }
 ?>
